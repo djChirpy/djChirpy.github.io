@@ -72,7 +72,7 @@ function createVisualization(json) {
       .attr("display", function(d) { return d.depth ? null : "none"; })
       .attr("d", arc)
       .attr("fill-rule", "evenodd")
-      .style("fill", function(d) { return colors[d.name]; })
+      .style("fill", #7b615c)
       .style("opacity", 1)
       .on("mouseover", mouseover);
 
@@ -187,7 +187,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
 
   entering.append("svg:polygon")
       .attr("points", breadcrumbPoints)
-      .style("fill", function(d) { return colors[d.name]; });
+      .style("fill", #7b615c);
 
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
